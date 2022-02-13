@@ -1,0 +1,31 @@
+{
+  "name": "icon",
+  "version": "1.0.0",
+  "description": "bootstrap icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "icons"
+  ],
+  "author": "mariana",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.1",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "loaders.css": "^0.1.2",
+    "relaxed-json": "^1.0.3",
+    "vinyl-ftp": "^0.6.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}

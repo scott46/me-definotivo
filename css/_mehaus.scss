@@ -1,0 +1,47 @@
+.header-mehaus {
+    height: 600px;
+    background: url(../imgs/me-haus-home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+
+.main-mehaus {
+
+    margin-top: 60px;
+
+    .comentario-bg {
+        background:url(../imgs/comment-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: 1rem;
+        color: color(black);
+        font-weight: 300;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .inicialtext {
+        font-size: 1rem;
+        color: color(black);
+        font-weight: 300;
+        line-height: 1.2rem;
+    }
+
+}

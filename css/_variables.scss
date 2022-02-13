@@ -1,0 +1,72 @@
+$colors: (
+   gray-one:#2F2F2F,
+   gray-two:#707070,
+   light-gray:#A8A8A8,
+   light-gray-two:#F4F4F4,
+   white:#ffffff,
+   black:#000000,
+   link:#5769F2,
+   blue:#016FD0,
+   red:#FC4545
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$desktop-lg:1200px;
+$desktop-md:992px;
+$desktop-sm:767px;
+$desktop-xs:767px;
+$mobile:480px;
+
+
+@mixin portrait {
+    @media (max-width: #{$desktop-sm}) and (orientation : portrait)  {
+        @content;
+    }
+}
+
+@mixin desktop-xl {
+    @media (min-width: #{$desktop-lg}) {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media (max-width: #{$desktop-lg}) {
+        @content;
+    }
+}
+
+@mixin desktop-md {
+    @media (max-width: #{$desktop-md}) {
+        @content;
+    }
+}
+
+@mixin desktop-sm {
+    @media (max-width: #{$desktop-sm}) {
+        @content;
+    }
+}
+
+@mixin desktop-xs {
+    @media (max-width: #{$desktop-xs}) {
+        @content;
+    }
+}
+
+@mixin desktop-sm-min {
+    @media (min-width: #{$desktop-sm}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+

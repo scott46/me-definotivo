@@ -1,0 +1,585 @@
+.main-experience {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: color(white);
+
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+    }
+
+    .content-main-experience {
+       /* position: absolute;*/
+        margin-bottom: 50px;
+        align-self: flex-end!important;
+        width: 100%;
+
+        button {
+            /*position: absolute;
+            top: 160px;
+            right: 0;
+            left: 0;
+            margin: auto;*/
+            margin: 15px auto 20px auto;
+
+            @include desktop-sm {
+                margin: 15px auto 20px 0px;
+            }
+        }
+
+        @include desktop-sm {
+            margin-right: 30px;
+            bottom: 30px;
+
+        }
+
+        .bi {
+            margin-right: 5px;
+        }
+
+        .time span {
+            font-size: 0.8rem;
+        }
+    }
+
+    h1 {
+        font-weight: 700;
+
+        @include desktop-sm {
+            font-size: 1.5rem;
+        }
+    }
+
+    h3 {
+        font-weight: 300;
+        padding: 0px;
+
+        @include desktop-sm {
+            font-size: 1rem;
+        }
+
+    }
+
+    h4 {
+        font-weight: 300;
+        padding: 0px;
+        margin: 0px;
+
+        @include desktop-sm {
+            font-size: 1rem;
+        }
+
+    }
+
+    .precio-exp {
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+
+        @include desktop-sm {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 1rem;
+        }
+    }
+
+    .fecha-exp {
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @include desktop-sm {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .info-experience {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-top: 30px;
+
+        @include desktop-sm {
+           font-size: 0.6rem;
+           line-height: 0.8rem;
+        }
+    }
+
+    .online {
+        text-align: center;
+        margin: 30px auto 0px auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        img {
+            display: inline-block;
+        }
+
+        p {
+            display: inline-block;
+            font-weight: 300;
+            margin-left: 10px;
+        }
+
+        @include desktop-sm {
+            position: relative;
+            text-align: left;
+            margin: 15px auto 0px auto;
+
+        }
+    }
+}
+
+.bg-black-op {
+    width: 100%;
+    height: 100%;
+    background-color: color(black);
+    opacity: 0.4;
+    position: absolute;
+}
+
+.bg-black-card {
+    width: 100%;
+    height: 100%;
+    background-color: color(black);
+    opacity: 0.2;
+    position: absolute;
+}
+
+.card-experience {
+    font-size: 0.8rem;
+    color: color(light-gray);
+    text-transform: uppercase;
+
+    @include mobile {
+        font-size: 0.7rem;
+    }
+
+}
+
+.card-links {
+    width: 55px;
+
+    small a {
+        color: #707070;
+    }
+}
+
+.material-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .play {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 1;
+        position: relative;
+        transition: opacity 0.2s linear 0.2s;
+
+        img {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+
+    .review {
+        color: color(white);
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity 0.2s linear 0.2s;
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        .bi::before {
+            font-size: 0.8rem;
+            margin-right: 3px;
+        }
+    }
+
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.play:hover + .review {
+    opacity: 1;
+}
+
+.play:hover {
+    opacity: 0;
+}
+
+.card-image {
+    position: relative;
+}
+
+.content-experience {
+    .card-footer {
+        height: 25px !important;
+
+        .time {
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 0px;
+        
+            span {
+                font-size: 0.6rem;
+            }
+        
+        }
+    
+        .bi::before {
+            font-size: 0.8rem !important;
+            margin-right: 3px;
+         }
+
+    }
+
+    h2 {
+        color: color(gray-two);
+        font-weight: 400;
+        margin: 0px 0px 30px 0px;
+        line-height: 2rem;
+
+        @include desktop-sm {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .bt-back {
+        text-align: right;
+    }
+
+}
+
+.title-ce {
+    color: color(gray-two);
+    font-size: 1.3rem;
+}
+
+.disponible {
+    color: color(gray-two);
+    font-size: 1rem;    
+}
+
+.rate {
+    color: color(light-gray);
+    margin-top: 10px;
+
+    .bi-star {
+        margin-right: 8px;
+
+        @include mobile {
+            margin-right: 3px;
+        }
+    }
+
+    p {
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+}
+
+.share {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: color(light-gray);
+
+    .bi-heart {
+        color: color(light-gray);
+    }
+
+    .bi-heart::before {
+        font-size: 1.7rem;
+    }
+
+    .bi-upload::before {
+        width: 30px !important;
+        height: 30px !important;
+        opacity: 0.6;
+    }
+
+    p {
+        @include desktop-xs {
+            display: none;
+        }
+        padding: 0px;
+        margin: 0px 10px 0px 5px;
+    }
+
+    @include desktop-xs {
+        .bi {
+            margin-left: 5px;
+        }
+    }
+}
+
+.comment-review {
+    width: 100%;
+    padding: 10px;
+    border-color: color(light-gray);
+
+    &::-webkit-input-placeholder {
+        color: color(light-gray);
+        font-size: 0.8rem;
+    }
+}
+
+.follower {
+
+    img {
+        width: 40px;
+    }
+}
+
+.follower-comment {
+    margin-left: 15px;
+
+    h5 {
+        color: color(black);
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+        color: color(light-gray);
+    }
+
+    .comment {
+        font-size: 0.8rem;
+        color: color(black);
+        line-height: 1rem;
+
+        @include mobile {
+         font-size: 0.7rem;
+         line-height: 0.9rem;
+
+        }
+    }
+}
+
+.banner-canal {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    padding: 40px;
+
+    &.bc-gift {
+        background: rgb(102,166,144);
+        background: linear-gradient(248deg, rgba(102,166,144,1) 0%, rgba(71,110,180,1) 47%, rgba(168,55,93,1) 100%);
+        
+        @include desktop-sm {
+            height: auto !important;
+        }
+
+        .bc-info {
+            @include desktop-sm {
+              flex-direction: column !important;
+            }
+        }
+    
+    }
+
+}
+
+
+
+.bc-img {
+	background-image: url(../imgs/banner-home-carnaroli-entrerriano.jpg);
+}
+
+.bc-info {
+	height: 100%;
+}
+
+.bc-content {
+    width: 50%;
+
+    @include desktop-sm {
+        width: 100%;
+      }
+
+    h6 {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        color: color(white);
+    }
+}
+
+.bc-title {
+	font-weight: 400;
+	text-align: center;
+	color:  color(white);
+	font-size: 2.5rem;
+	line-height: 2.2rem;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+
+    @include desktop-md {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 20px;
+    }
+
+    @include mobile {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+.otras-fechas {
+    width: 100%;
+    background-color: color(light-gray-two);
+    padding: 50px 30px;
+    border: color(gray-one) 1px solid;
+    color: color(gray-two);
+    line-height: 1.2rem;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.content-review {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.swiper-canal {
+
+    .swiper-button-prev, .swiper-button-next {
+        color: color(white);
+    }
+
+    @include desktop-sm {
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 1.5rem;
+    }
+
+}
+}
+
+.imageIcon {
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    left: 40px;
+
+    @include desktop-sm {
+        width: 35px;
+    }
+}
+
+.audio {
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+
+    .audio-content {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+
+        @include desktop-sm {
+            display: block;
+        }
+
+        .time {
+            color: #ffffff;
+        }
+
+        .content-waveform {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .controls {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            @include desktop-sm {
+                justify-content: center;
+                margin-right: 0px;
+            }
+
+            button {
+
+                background-color: transparent;
+                border: none;
+
+                .bi-play-circle::before, .bi-pause-circle::before {
+                    font-size: 5rem;
+                    color: color(white);
+                }
+            }
+
+        }
+
+    }
+}
+
+.pdf {
+    background-color: color(gray-two);
+    color: color(white);
+    padding: 10px 15px;
+    margin-top: 25px;
+
+    p {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    a {
+        color: color(white);
+    }
+
+    .bi {
+        margin-left: 5px;
+    }
+
+    .bi-eye-pdf::before {
+        content: "";
+        background: url(../imgs/eye.svg) no-repeat;
+        width: 25px;
+        height: 20px;
+    }
+}

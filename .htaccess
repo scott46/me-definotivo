@@ -1,0 +1,41 @@
+Options All -Indexes
+
+#RewriteEngine On
+#RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?pagina=$1
+
+
+### Detecto el idioma ###
+RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png)$ [NC] #Evita que se sobreesriban los recursos que no son .php
+RewriteRule ^([a-z]{2})/(.*)         $2?idioma=$1 [QSA,PT]
+#########################
+
+<IfModule mod_rewrite.c>
+
+    # (1)
+    RewriteEngine On
+
+    # (2)
+    Options +FollowSymlinks
+
+    # (3)
+    # Options +SymLinksIfOwnerMatch
+
+    # (4)
+     RewriteBase /md/me/
+
+    # (5)
+    # RewriteOptions <options>
+
+    # (6)
+    RewriteCond %{HTTPS} =on
+    RewriteRule ^ - [env=proto:https]
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ - [env=proto:http]
+
+</IfModule>
+
+# Resuelvo como archivo .php las URL sin extensión
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^(.+)\.([^/]+)$
+RewriteRule ^(.+)$ $1.php [NC,L]

@@ -1,0 +1,363 @@
+.container-datosimp {
+    background-color: color(light-gray-two);
+    padding: 20px;
+    margin-bottom: 30px;
+
+    h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+}
+
+.input-group-append {
+    background-color: color(light-gray-two);
+    border: 1px solid #ced4da;
+
+    button {
+        border: none;
+    }
+
+    i {
+        padding: 8px 8px 0px 8px;
+    }
+
+}
+
+.col-form-label {
+    width: 100%;
+}
+
+.header-checkout {
+    background: url(../imgs/header-checkout.png) no-repeat color(light-gray-two);
+    background-position: center center;
+    height: 400px;
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+}
+
+.breadcrumb-item {
+     a {
+         color: color(black);
+         font-size: 0.875rem;
+
+         @include mobile {
+            font-size: 0.75rem;
+         }
+     }
+
+     &.active {
+         font-weight: 700;
+         color: color(black);
+         font-size: 0.875rem;
+
+         @include mobile {
+            font-size: 0.75rem;
+            margin-top: 2px;
+         }
+     }
+}
+
+.breadcrumb {
+    background: none;
+    padding: .75rem 1rem .75rem 0;
+}
+
+#checkout {
+    margin: 80px 0px;
+
+    h1, .precio {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+
+        @include desktop-sm {
+            font-size: 1.5rem;
+        }
+    }
+
+    .datos {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 1rem;    
+    }
+
+    h4 {
+        font-weight: 400;
+    }
+
+    .custom-select {
+        padding: .375rem .75rem;
+        border-radius: 0px;
+        font-size: 0.875rem;
+
+    }
+
+    .form-group {
+        margin-bottom: 0px;
+    }
+
+    .form-text {
+        margin-top: 10px;
+        line-height: 1rem;
+    }
+
+    .form-check-label {
+        line-height: 1rem;
+    }
+
+    .form-check {
+        margin-bottom: 5px;
+    }
+
+    label {
+        line-height: 1rem;
+    }
+
+    .banner-checkout {
+        height: 260px;
+        background-color: color(black);
+        width: 100%;
+        color: color(white);
+        
+        h3 {
+            font-size: 2.5rem;
+            margin: 10px 0px 0px 0px;
+        }
+
+        p {
+            font-size: 1.7rem;
+            margin: 0px;
+            font-weight: 300;
+        }
+
+        img {
+            margin-right: 30px;
+        }
+
+        @include desktop-sm {
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            img {
+                width: 80px;
+            }
+        }
+
+        @include mobile {
+            text-align: center;
+
+            div {
+                display: block !important;
+            }
+
+            img {
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+
+        }
+        
+    }
+    
+}
+
+.registro {
+    background: rgb(76,174,166);
+    background: linear-gradient(270deg, rgba(76,174,166,1) 0%, rgba(55,141,201,1) 25%, rgba(56,73,149,1) 50%, rgba(148,86,124,1) 75%, rgba(227,148,76,1) 100%);
+    color: color(white) !important;
+    border: none !important;
+}
+
+.bt-back {
+    padding: .75rem 0;
+    display: block;
+    text-align: right;
+    font-size: 0.875rem;
+    color: color(black);
+
+    @include desktop-sm {
+        text-align: left;
+    }
+}
+
+.tarjetas {
+    text-align: left;
+    margin: 20px 0px;
+    padding:0px;
+
+    li {
+    text-align: center;
+    height: 50px;
+    margin: 10px 15px 10px 15px;
+    display: inline-block;
+}
+
+}
+
+.tarjeta-radio {
+    position: relative;
+    transform: scale(1.5);
+    margin-right: 20px;
+
+}
+
+.tarjetas-container {
+    padding: 0px 10px 0px 20px;
+    margin-top: 50px;
+}
+
+.carrito {
+    border:color(gray-one) solid 1px;
+    padding: 20px;
+    background-color: color(light-gray-two);
+
+    ul .list-group-item {
+        background: none;
+        padding: .75rem 0;
+        font-weight: 400;
+
+        .precio-sub {
+            color: color(red);
+        }
+    }
+
+    .precio-total {
+        height: 200px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .btn-sm {
+        font-size: 0.7rem !important;
+        padding: 1rem .8rem !important;
+        line-height: 0.8rem;
+        width: 100%;
+        }
+    }
+    
+
+.product-info {
+
+    h5 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        line-height: 1.5rem;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .p-desc {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 0.9rem;
+        margin: 0px;
+    }
+
+    .p-price {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+.product-cant {
+
+    padding: 5px 10px;
+
+    h6 {
+        font-size: 0.8rem;
+        font-weight: 300;
+        padding: 0px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    input {
+        border: none;
+    }
+
+    .group-cant {
+        margin-left: 10px;
+        span {
+            display: block;
+            line-height: 1.2rem;
+
+            button {
+                border: none;
+                background: transparent;
+                padding: 0px;
+                margin: 0px;
+
+                i:before {
+                    font-size: 0.9rem;
+
+                }
+            }
+        }
+    }
+}
+
+.product-container {
+    .cant-sm {
+        font-size: 0.7rem;
+        color: color(gray-two);
+        line-height: 0.8rem;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+    
+    @include desktop-md {
+            margin-top: 25px;
+        }
+    }
+
+.delete {
+    background: transparent;
+    border: none;
+    color: color(red);
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.text-gift {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: color(gray-two);
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5rem;
+}
+
+.input-desc {
+    height: 43px;
+}
+
+.btn-block+.btn-block {
+    margin-top: 0px;
+}
+
+
+
+
+
+

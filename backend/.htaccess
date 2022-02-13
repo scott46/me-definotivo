@@ -1,0 +1,24 @@
+Options All -Indexes
+
+RewriteEngine On
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?pagina=$0
+
+<IfModule mod_rewrite.c>
+
+    # (1)
+    RewriteEngine On
+
+    # (2)
+    Options +FollowSymlinks
+
+    # (3)
+    # Options +SymLinksIfOwnerMatch
+
+    # (4)
+     RewriteBase /md/me/backend/
+
+    # (5)
+    # RewriteOptions <options>
+
+
+</IfModule>

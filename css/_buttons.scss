@@ -1,0 +1,184 @@
+.btn {
+	border-radius: 0px;
+    font-size: 0.875rem;
+    padding: .45rem 1.5rem;
+    border: none;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none !important;
+}
+
+@mixin buttonBg($bg, $font-color,$border) {
+    background-color: $bg;
+    color: $font-color;
+    border: $border;
+  }
+
+@mixin buttonBgHover ($bg, $font-color,$border-color) {
+    &:hover, &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        background-color:$bg;
+        color:$font-color;
+        border-color:$border-color;
+  
+      } 
+  }
+
+.btn-outline-primary, .btn-outline-success {
+    @include buttonBg(transparent,color(white), 1px solid color(white));
+    @include buttonBgHover(color(white),color(gray-two), color(white));
+
+}
+
+.btn-secondary {
+    @include buttonBg(color(white),color(gray-two), 1px solid color(gray-two));
+	border-radius: 8px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	padding: .375rem 3rem;
+
+    &:hover, &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+    background-color: color(gray-two);
+    }
+    
+}
+
+.btn-info {
+    @include buttonBg(color(white),color(gray-two), none);
+	font-weight: 700;
+    font-size: 0.75rem;
+    padding: .8rem 3.5rem;
+	text-transform: uppercase;
+    display: block;
+
+    &:hover, &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+    background-color: color(gray-two);
+    }
+
+    &.focus, &:focus {
+        border-color: color(gray-two);
+        background-color: color(gray-two);
+        box-shadow: none;
+    }
+}
+
+.btn-gradient {
+    @include buttonBg(rgb(57,116,183),color(white), none);
+    background: linear-gradient(270deg, rgba(57,116,183,1) 0%, rgba(40,174,208,1) 47%, rgba(50,184,174,1) 100%);
+	border-radius: 0px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	padding: .8rem 3.5rem;
+    display: block;
+
+    &:hover {
+    background-color: color(gray-two);
+    }
+
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        background-color: color(gray-two);	
+    }
+
+    &.focus, &:focus {
+        border-color: color(gray-two);
+        background-color: color(gray-two);
+        box-shadow: none;
+    
+    }
+}
+
+
+.btn-gray {
+    @include buttonBg(color(gray-two),color(white), 1px solid color(gray-two));
+    @include buttonBgHover(color(white),color(gray-two), color(gray-two));
+
+    @include mobile {
+        margin: auto;
+    }
+
+}
+
+
+
+.btn-bg {
+	border: solid 1px color(gray-two);
+	background-color: color(white);
+    color: color(gray-one);
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 1rem 3.5rem;
+	text-transform: uppercase;
+
+    &:hover {
+        background-color: color(gray-two);
+        color: color(white); 
+    }
+}
+
+.btn-md {
+	border: solid 1px color(gray-two);
+	background-color: color(white);
+    color: #2F2F2F;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 1rem 0rem;
+	text-transform: uppercase;
+	width: 210px;
+    &:hover {
+        background-color: #707070;
+        color: color(white);
+    }
+
+}
+
+.btn-sm {
+    font-size: 0.6rem;
+    padding: 0.8rem;
+	text-transform: uppercase;
+    &:hover {
+        background-color: #707070;
+        color: color(white);
+    }
+
+}
+
+
+.btn-outline-more {
+    border:1px solid color(gray-two);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: color(gray-two);
+    font-size: 0.75rem !important;
+    padding: .8rem 3.5rem !important;
+
+}
+
+.btn-outline-more:hover {
+    background-color: color(gray-two);
+    color: color(white);
+}
+
+
+/*btn top*/
+
+.btn-top {
+    display: inline-block;
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: white;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+

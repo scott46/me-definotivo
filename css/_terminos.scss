@@ -1,0 +1,186 @@
+.header-terms {
+    height: 600px;
+
+    h1 {
+        font-size: 3.75rem;
+        color: color(gray-two);
+        text-align: center;
+        line-height: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: color(gray-two);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    @include mobile {
+        h1 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+.bg-terms-1 {
+    background: url(../imgs/bg-terms-1.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.bg-terms-2 {
+    background: url(../imgs/bg-terms-2.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.bg-terms-3 {
+    background: url(../imgs/bg-terms-3.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.content-terms {
+    color: color(gray-two);
+
+    .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 30px 0px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    ul {
+        font-size: 0.8rem;
+        font-weight: 300;       
+    }
+}
+
+.main-question {
+    color: color(gray-two);
+    margin:30px 0px 70px 0px;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom:25px;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .container-question {
+        padding: 30px 60px;
+
+        @include mobile {
+            padding: 30px 30px;
+        }
+    }
+}
+
+.header-acerca-me {
+    background: url(../imgs/bg-acerca-me.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    h1 {
+        font-weight: 400;
+        color: color(white);
+        text-align: center;
+        font-size: 4rem;
+
+        &:after {
+            content:'';
+            background: url(../imgs/me-blanco.png) no-repeat;
+            display: inline-block;
+            background-size: contain;
+            height: 48px;
+            width: 100px;
+            margin-left: 5px;
+
+        }
+
+    }
+
+    h2 {
+        font-weight: 400;
+        color: color(white);
+        text-align: center;
+    }
+
+    @include desktop-sm {
+        h1 {
+            font-size: 3rem;
+            line-height: 3rem;
+
+            &:after {
+                height: 36px;
+                width: 80px;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.main-acerca {
+
+    h3 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: color(gray-two);
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 80px 0px 30px 0px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        color: color(gray-two);
+        text-align: left;
+        font-weight: 700;
+    }
+}
+
+.sumate {
+    height: 300px;
+    width: 100%;
+    background: url(../imgs/bg-sumate.png) no-repeat;
+    background-position: center;
+    margin-top: 40px;
+
+    img {
+        padding: 0px 25px;
+    }
+}
